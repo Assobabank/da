@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Projet Web</title>
+</head>
+<body>
+    <header>
+        <h1>Mon Projet Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#videos">Vidéos</a></li>
+                <li><a href="#audio">Audio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <h2>Accueil</h2>
+        <p>Bienvenue sur mon site web. Ceci est la page d'accueil.</p>
+    </section>
+
+    <section id="videos">
+        <h2>Vidéos</h2>
+        <video controls width="400">
+            <source src="ma_video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+    </section>
+
+    <section id="audio">
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="mon_audio.mp3" type="audio/mpeg">
+            Votre navigateur ne supporte pas la lecture audio.
+        </audio>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="traitement_formulaire.php" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+
+    <footer>
+        <p> &copy; 2023 Mon Projet Web</p>
+    </footer>
+</body>
+</html>
